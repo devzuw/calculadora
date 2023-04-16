@@ -20,7 +20,7 @@ buttons.forEach(button => {
       let expression = resultInput.value;
       expression = expression.replace('x', '*');
       expression = expression.replace('÷', '/');
-      expression = expression.replace('REST', '%');
+      expression = expression.replace('RESTO', '%');
       const result = eval(expression); // eval se encarga de evaluar cada expresion y ejecutarla, por esto "=" se define como resultado de manera automatica
       newValue = result; // datos almacenados de expresion
     } else {
