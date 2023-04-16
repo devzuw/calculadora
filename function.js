@@ -24,11 +24,11 @@ buttons.forEach(button => {
       const result = eval(expression); // eval se encarga de evaluar cada expresion y ejecutarla, por esto "=" se define como resultado de manera automatica
       newValue = result; // datos almacenados de expresion
     } else {
-      //agrega los datos
+      //agrega los datos pero no escribe el valor al input(solo almacena)
       newValue = resultInput.value + buttonValue;
     }
 
-    // Actualizar el valor del campo de entrada
+    // Actualizar el valor del campo de entrada(escribe los datos en el input)
     resultInput.value = newValue;
   });
 });
